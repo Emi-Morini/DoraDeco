@@ -1,0 +1,638 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* index */
+
+body{
+    background-image: linear-gradient(to left, #a07d38, #e4c991)
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.logo{
+    margin: 0.8rem;
+    width: 5rem;
+   
+}
+
+.menu ul{
+    display: flex;
+    column-gap: 1rem;
+    
+}
+
+
+.menu ul li{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    list-style: none;
+    background-color: rgb(184, 131, 72);
+    padding: 0.5rem;
+    border-radius: 1rem; 
+    box-shadow: 1px 1px brown;  
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black; 
+    font-size: 0.6rem;
+}
+
+.divisor{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+.foto{
+    margin: 0.4rem;
+    width: 30%;
+    height: 40%;
+    box-shadow: 3px 3px rgb(90, 88, 88);
+    
+}
+
+
+/* main */
+
+.fotocinco{
+    display: none;
+}
+
+.mainHome{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-areas: "titulo"
+                         "parrafo"
+                         "tituloDos"
+                         "fotoUno" 
+                         "fotoDos"
+                         "fotoTres" 
+                         "fotoCuatro";
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center;                
+}
+
+.titulo{
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+}
+
+.tituloDos{
+    grid-area: tituloDos;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-decoration: solid;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(100, 66, 27);
+    margin-top: 1rem;
+   
+}
+
+
+
+.parrafo{
+    grid-area: parrafo;
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    
+}
+
+.fotoUno{
+    grid-area: fotoUno;
+    margin: 1rem;
+    
+}
+
+.fotoDos{
+    grid-area: fotoDos;
+    margin: 1rem;
+    
+}
+
+.fotoTres{
+    grid-area: fotoTres;
+    margin: 1rem;
+   
+}
+
+.fotoCuatro{
+    grid-area: fotoCuatro;
+    margin: 1rem;
+  
+}
+
+/* Footer */
+
+.pie{
+    text-align: center;
+    
+}
+
+.pie .categorias{
+    display: inline-block;
+    padding: 0.8rem;
+    color: white;
+    list-style-type: circle;
+    text-align: left;
+}
+
+.pie .categorias .subLista{
+    list-style: none ;
+    text-align: left;
+    
+}
+
+.tituloFooter{
+    color: white;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    
+}
+
+.imagenFooter{
+    width: 30%;
+    padding: 1rem;
+    
+}
+
+.parrafoFooter{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+  
+    .fotoCinco{
+        display: none;
+    }
+
+    .menu ul li a{
+        font-size: 1rem;
+    }
+
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .parrafo{
+        font-size: 1.2rem;
+    }
+
+    .tituloDos{
+        font-size: 2rem;
+    }
+
+    .mainHome{
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 1.5fr 1.5fr;
+        grid-template-areas: "titulo titulo"
+                             "parrafo parrafo"
+                             "tituloDos tituloDos"
+                             "fotoUno fotoDos" 
+                             "fotoTres fotoCuatro";
+        justify-content: center; 
+        justify-items: center; 
+        align-items: center;                
+    }
+}
+
+
+@media screen and (min-width: 992px){
+   
+
+    .fotoCinco{
+        display: block;
+        grid-area: fotoCinco;
+    }
+
+    .menu ul li a{
+        font-size: 1rem;
+    }
+
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    .parrafo{
+        font-size: 1.2rem;
+    }
+
+    .tituloDos{
+        font-size: 2rem;
+    }
+
+    .mainHome{
+        grid-template-rows: 0.2fr 0.2fr 0.2fr 1.5fr 1.5fr 1.5fr;
+        grid-template-areas: "titulo titulo"
+                             "parrafo parrafo"
+                             "tituloDos tituloDos"
+                             "fotoUno fotoDos" 
+                             "fotoTres fotoTres"
+                             "fotoCuatro fotoCinco";
+        justify-content: center; 
+        justify-items: center; 
+        align-items: center;                
+    }
+   
+}
+
+
+
+/* quienes somos */
+
+.quienes{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 1fr;
+    grid-template-areas: "tituloQuienes"
+                         "subQuienes"
+                         "parrafoQuienes"
+                         "parrafoQuienesDos"
+                         "parrafoQuienesTres"
+                         "videosQuienes";
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+.tituloQuienes{
+    grid-area: tituloQuienes;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(100, 66, 27);
+    font-size: 2.5rem;
+    
+}
+
+.subQuienes{
+    grid-area: subQuienes;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+.parrafoQuienes{
+    grid-area: parrafoQuienes;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+     
+}
+
+.parrafoQuienesDos{
+    grid-area: parrafoQuienesDos;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    
+}
+
+.parrafoQuienesTres{
+    grid-area: parrafoQuienesTres;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+.videoQuienes{
+    grid-area: videoQuienes;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+
+    .parrafoQuienes{
+        font-size: 1.3rem;
+    }
+
+    .parrafoQuienesDos{
+        font-size: 1.3rem;
+    }
+
+    .parrafoQuienesTres{
+        font-size: 1.3rem;
+    }
+
+    .videoQuienes{
+        width: 40rem;
+        height: 40rem;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    
+
+    .parrafoQuienes{
+        font-size: 1.6rem;
+    }
+
+    .parrafoQuienesDos{
+        font-size: 1.6rem;
+    }
+
+    .parrafoQuienesTres{
+        font-size: 1.6rem;
+    }
+
+    .videoQuienes{
+        width: 45rem;
+        height: 45rem;
+    }
+
+}
+
+/* Productos */
+
+.produc{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(1.2fr);
+    grid-template-areas: "titProduc"
+                         "parraProduc"
+                         "ulProduc"
+                         "divProducUno"
+                         "divProducDos"
+                         "divProducTres"
+                         "divProducCuatro";
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+   
+}
+
+.titProduc{
+    grid-area: titProduc;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(100, 66, 27);
+    font-size: 2rem;
+    margin: 0.5rem;
+   
+}
+
+.parraProduc{
+    grid-area: parraProduc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.7rem;
+   
+}
+
+.ulProduc{
+    grid-area: ulProduc;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(100, 66, 27);
+    font-size: 1.3rem;
+    margin-left: 2rem;
+    list-style: none;
+    text-align: center;
+    margin: 1rem;
+    
+}
+
+.divProducUno{
+    grid-area: divProducUno;
+    max-width: 100%;
+    max-height: 100%; 
+    margin: 0.8rem;  
+    
+}
+
+.divProducDos{
+    grid-area: divProducDos;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0.8rem;  
+     
+}
+
+.divProducTres{
+    grid-area: divProducTres;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0.8rem;   
+     
+}
+
+.divProducCuatro{
+    grid-area: divProducCuatro;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0.8rem;   
+     
+}
+
+
+
+.imaProduc{
+  width: 300px;
+  height: 300px;
+  
+}
+
+
+.imaProduc:hover{
+    box-shadow: 0 0.1rem 0.4rem black;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+  
+
+    .produc{
+        grid-template-areas: "titProduc titProduc"
+                             "parraProduc parraProduc"
+                             "ulProduc ulProduc"
+                             "divProducUno divProducDos"
+                             "divProducTres divProducCuatro";
+        justify-content: center; 
+        justify-items: center; 
+        align-items: center; 
+       
+    }
+
+
+
+}
+
+@media screen and (min-width: 992px){
+  
+
+    .produc{
+        grid-template-areas: "titProduc titProduc titProduc titProduc"
+                             "parraProduc parraProduc parraProduc parraProduc"
+                             "ulProduc ulProduc ulProduc ulProduc"
+                             "divProducUno divProducDos divProducTres divProducCuatro";
+        justify-content: center; 
+        justify-items: center; 
+        align-items: center; 
+       
+    }
+
+}
+
+
+
+/* Medios de pago */
+
+.sectionMedios{
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    
+    
+}
+
+.tituMedios{
+   
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(158, 182, 226);
+    font-size: 35px;
+    
+}
+
+.artiMedios{
+    margin: 20px;
+}
+
+.tituloMedios{
+    color: darkblue;
+    padding: 20px;
+}
+
+.imgMedios{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.ulMedios{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    list-style: none ;
+}
+
+/* Contactos */
+
+.secConta{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "tituConta"
+                         "parraConta"
+                         "ulConta"
+                         "parraContaDos"
+                         "titulConta"
+                         "formConta";
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center;                      
+}
+
+.tituConta{
+    grid-area: tituConta;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(100, 66, 27) ;
+    font-size: 2rem;
+    
+}
+
+
+.parraConta{
+    grid-area: parraConta;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1rem;
+}
+
+.parraContaDos{
+    grid-area: parraContaDos;
+    font-size: 1.2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1rem;
+}
+
+.ulConta{
+    grid-area: ulConta;
+    margin: 1.5rem;
+}
+
+.titulConta{
+    grid-area: titulConta;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: rgb(100, 66, 27);
+    font-size: 1.3rem;
+    margin: 2rem;
+    
+}
+
+.formConta{
+    grid-area: formConta;
+    margin: 2rem;
+   
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    footer{
+        background-color: aqua;
+    }
+
+    .tituConta{
+        font-size: 2.3rem;
+    }
+
+    .parraConta{
+        font-size: 1.3rem;
+    }
+
+    .parraContaDos{
+        font-size: 1.3rem;
+    }
+
+
+}
+
+@media screen and (min-width: 992px){
+
+    .tituConta{
+        font-size: 2.5rem;
+    }
+
+    .parraConta{
+        font-size: 1.5rem;
+    }
+
+    .parraContaDos{
+        font-size: 1.5rem;
+    }
+
+    .titulConta{
+        font-size: 1.5rem;
+    }
+
+}
