@@ -64,9 +64,7 @@ header{
 
 /* main */
 
-.fotocinco{
-    display: none;
-}
+
 
 .mainHome{
     display: grid;
@@ -119,25 +117,45 @@ header{
 .fotoUno{
     grid-area: fotoUno;
     margin: 1rem;
-    
+    transition: 2s;
+}
+
+.fotoUno:hover{
+    transform: scale(1.2);
 }
 
 .fotoDos{
     grid-area: fotoDos;
     margin: 1rem;
-    
+    transition: 2s;
+}
+
+.fotoDos:hover{
+    transform: scale(1.2);
 }
 
 .fotoTres{
     grid-area: fotoTres;
     margin: 1rem;
-   
+    transition: 2s;
+}
+
+.fotoTres:hover{
+    transform: scale(1.2);
 }
 
 .fotoCuatro{
     grid-area: fotoCuatro;
     margin: 1rem;
-  
+    transition: 2s;
+}
+
+.fotoCuatro:hover{
+    transform: scale(1.2);
+}
+
+.fotoCinco{
+    display: none;
 }
 
 /* Footer */
@@ -240,6 +258,11 @@ header{
     .fotoCinco{
         display: block;
         grid-area: fotoCinco;
+        transition: 2s;
+    }
+
+    .fotoCinco:hover{
+        transform: scale(1.2);
     }
 
     .menu ul li a{
@@ -616,10 +639,7 @@ header{
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
-    footer{
-        background-color: aqua;
-    }
-
+   
     .tituConta{
         font-size: 2.3rem;
     }
