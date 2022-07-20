@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Productos</title>
     <link rel="icon" href="../IMG/logo.jpeg">
     <link rel="stylesheet" href="../CSS/style.css">
@@ -13,111 +15,146 @@
 </head>
 <body>
 
-    <header>
+    <div class="div-body">
 
-        <div class="colorInicial">
-            <a href="./productos.html"><img class="logo" src="../IMG/logo.jpeg" alt="logo"></a>
-        </div>
+        <header class="container-fluid">
 
-        <nav class="menu">
+            <div class="row">
+
+
+                <nav class="navbar navbar-expand-lg col-12 estilo-nav">
+
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./productos.html"><img class="logo" src="../IMG/logo.jpeg" alt="logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"        aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown estilo-li">
+                                    <a class="nav-link dropdown-toggle" href="../PAGES/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Sillones</a></li>
+                                        <li><a class="dropdown-item" href="#">Juegos de comedor</a></li>
+                                        <li><a class="dropdown-item" href="#">Decoración</li>
+                                        <li><a class="dropdown-item" href="#">Mesas de arrime</a></li>
+                                        <li><a class="dropdown-item" href="#">Desayunadores</a></li>
+                                        <li><a class="dropdown-item" href="#">Racks</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item estilo-li">
+                                    <a class="nav-link" href="../PAGES/mediosdepago.html">Medios de pago</a>
+                                </li>
+
+                                <li class="nav-item estilo-li">
+                                    <a class="nav-link" href="../PAGES/quienessomos.html">Quienes somos</a>
+                                </li>
+
+                                <li class="nav-item estilo-li">
+                                    <a class="nav-link" href="../PAGES/contactos.html">Contactos</a>
+                                </li>
+
+                        
+
+                            </ul>
+                            <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Productos" aria-label="Search">
+                            <button class="btn btn-outline-success estilo-button" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <main class="produc">
+            
+
+            <h1 class="titProduc">Productos:</h1>
+
+            
+            <p class="parraProduc">Tenemos una amplia variedad de productos para tu hogar. Consulta por muebles a medida..</p>
+            
+            <ul class="ulProduc">
+                <li>Juegos de comedor</li>
+                <li>Mesas de arrime</li>
+                <li>Decoración y diseño</li>
+                <li>Sillones</li>
+                <li>Desayunadores</li>
+            </ul>
+            
+
+            <div class="divProducUno">
+                <img class="imaProduc" src="../IMG/image3.jpeg" alt="imagen de mesa y sillas">
+            </div>
+
+            <div class="divProducDos">
+                <img class="imaProduc" src="../IMG/image1.jpeg" alt="imagen de mesa de arrime">
+            </div>
+
+            <div class="divProducTres">
+                <img class="imaProduc" src="../IMG/image8.jpeg" alt="imagen de sillon">
+            </div>
+
+            <div class="divProducCuatro">
+                <img class="imaProduc" src="../IMG/image2.jpeg" alt="imagen de desayunadores">
+            </div>
+                
+            
+
+        </main>
+
+        <footer class="pie">
             <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
+                <li class="categorias">Categorias
+                    <ol class="subLista">
+                        <li>Productos</li>
+                        <li>Medios de pago/ envio</li>
+                        <li>Quienes somos</li>
+                        <li>Contacto</li>
+                        <li>Mas info</li>
+                    </ol>
                 </li>
-                <li>
-                    <a href="../PAGES/quienessomos.html">Quienes somos</a>
+                <li class="categorias">Mas info
+                    <ol class="subLista">
+                        <li>Como comprar</li>
+                        <li>Formas de entrega</li>
+                        <li>De los productos</li>
+                        <li>Atencion y posventa</li>
+                    </ol>
                 </li>
-                <li>
-                    <a href="../PAGES/productos.html">Productos</a>
+                <li class="categorias">Contactos
+                    <ol class="subLista">
+                        <li>Wsp5491123700913</li>
+                        <li>Tel.:01139721861</li>
+                        <li>mail:doradecosrl@hotmail.com</li>
+                        <li>Direc.: Belgrano 2051</li>
+                    </ol>
                 </li>
-                <li>
-                    <a href="../PAGES/mediosdepago.html">Medios de pago</a>
-                </li>
-                <li>
-                    <a href="../PAGES/contactos.html">Contactos</a>
+                <li class="categorias">Seguinos
+                    <ol class="subListaDos" >
+                        <li><a href="https://facebook.com/" target="_blank"><img src="../IMG/001-facebook.png"></a></li>
+                        <li><a href="https://instagram.com/" target="_blank"><img src="../IMG/003-instagram.png"></a></li>
+                        <li><a href="https://tiktok.com/" target="_blank"><img src="../IMG/002-tik-tok.png"></a></li>
+                    </ol>
                 </li>
             </ul>
-        </nav>
 
-    </header>
+            <h3 class="tituloFooter">Medios de pago</h3>
+            <img class="imagenFooter" src="../IMG/mercadopago_logos1.jpeg" alt="imagen de medios de pago">
+            <p class="parrafoFooter">Copyright 2022 Todos los derechos reservados</p>
+        </footer>
 
-    <main class="produc">
-        
-
-        <h1 class="titProduc">Productos:</h1>
-
-        
-        <p class="parraProduc">Tenemos una amplia variedad de productos para tu hogar. Consulta por muebles a medida..</p>
-        
-        <ul class="ulProduc">
-            <li>Juegos de comedor</li>
-            <li>Mesas de arrime</li>
-            <li>Decoración y diseño</li>
-            <li>Sillones</li>
-            <li>Desayunadores</li>
-        </ul>
-        
-
-        <div class="divProducUno">
-            <img class="imaProduc" src="../IMG/image3.jpeg" alt="imagen de mesa y sillas">
-        </div>
-
-        <div class="divProducDos">
-            <img class="imaProduc" src="../IMG/image1.jpeg" alt="imagen de mesa de arrime">
-        </div>
-
-        <div class="divProducTres">
-            <img class="imaProduc" src="../IMG/image8.jpeg" alt="imagen de sillon">
-        </div>
-
-        <div class="divProducCuatro">
-            <img class="imaProduc" src="../IMG/image2.jpeg" alt="imagen de desayunadores">
-        </div>
-            
-        
-
-    </main>
-
-    <footer class="pie">
-        <ul>
-            <li class="categorias">Categorias
-                <ol class="subLista">
-                    <li>Productos</li>
-                    <li>Medios de pago/ envio</li>
-                    <li>Quienes somos</li>
-                    <li>Contacto</li>
-                    <li>Mas info</li>
-                </ol>
-            </li>
-            <li class="categorias">Mas info
-                <ol class="subLista">
-                    <li>Como comprar</li>
-                    <li>Formas de entrega</li>
-                    <li>De los productos</li>
-                    <li>Atencion y posventa</li>
-                </ol>
-            </li>
-            <li class="categorias">Contactos
-                <ol class="subLista">
-                    <li>Wsp5491123700913</li>
-                    <li>Tel.:01139721861</li>
-                    <li>mail:doradecosrl@hotmail.com</li>
-                    <li>Direc.: Belgrano 2051</li>
-                </ol>
-            </li>
-            <li class="categorias">Seguinos
-                <ol class="subListaDos" >
-                    <li><a href="https://facebook.com/" target="_blank"><img src="../IMG/001-facebook.png"></a></li>
-                    <li><a href="https://instagram.com/" target="_blank"><img src="../IMG/003-instagram.png"></a></li>
-                    <li><a href="https://tiktok.com/" target="_blank"><img src="../IMG/002-tik-tok.png"></a></li>
-                </ol>
-            </li>
-        </ul>
-
-        <h3 class="tituloFooter">Medios de pago</h3>
-        <img class="imagenFooter" src="../IMG/mercadopago_logos1.jpeg" alt="imagen de medios de pago">
-        <p class="parrafoFooter">Copyright 2022 Todos los derechos reservados</p>
-    </footer>
-    
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </div>
 </body>
 </html>

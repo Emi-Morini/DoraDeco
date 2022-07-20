@@ -408,6 +408,20 @@ header{
 }
 
 /* Productos */
+.div-body{
+    background-color: #a07d38;
+}
+
+.estilo-nav{
+    background-color: #a07d38;
+}
+
+.estilo-button{
+    background-color:  rgb(100, 66, 27);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: white;
+    border-color: black; 
+}
 
 .produc{
     display: grid;
