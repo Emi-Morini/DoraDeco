@@ -212,8 +212,16 @@ header{
 .imagenFooter{
     width: 30%;
     padding: 1rem;
-    
+        
 }
+
+.img-footer{
+    width: 30%;
+    padding: 1rem;
+}
+
+
+
 
 .parrafoFooter{
     text-align: center;
