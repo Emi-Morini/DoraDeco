@@ -592,7 +592,7 @@ header{
 .tituMedios{
    
     font-family: 'Kdam Thmor Pro', sans-serif;
-    color: rgb(158, 182, 226);
+    color: black;
     font-size: 35px;
     
 }
@@ -602,7 +602,7 @@ header{
 }
 
 .tituloMedios{
-    color: darkblue;
+    color: rgb(100, 66, 27);
     padding: 20px;
 }
 
