@@ -436,6 +436,8 @@ header{
 }
 
 /* Productos */
+
+
 .div-body{
     background-color: #a07d38;
 }
@@ -493,8 +495,12 @@ header{
     font-size: 2rem;
     list-style: none;
     text-align: center;
-    margin-top: 5rem;
-    
+    margin-top: 12rem;
+        
+}
+
+.ulProduc li{
+    padding-bottom: 1.5rem;
 }
 
 .divProducUno{
@@ -532,9 +538,9 @@ header{
 
 
 .imaProduc{
-  width: 500px;
-  height: 500px;
-  
+  width: 600px;
+  height: 700px;
+  margin-top: 1rem;
 }
 
 
